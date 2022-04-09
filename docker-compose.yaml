@@ -4,4 +4,4 @@ services:
     build: .
     image: java_app:1.1
     ports:
-      - "8086:8080"
+      - "8085:8080"

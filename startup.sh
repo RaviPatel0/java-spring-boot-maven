@@ -16,7 +16,6 @@ fi
 # echo "------------------------>building image."
 # docker build /home/ubuntu/java-maven-app -t java_app:1.1
 echo "------------------------>running containers."
-
 docker-compose build -q
 docker-compose up -d
 echo "------------------------>Current running containers" 

@@ -16,6 +16,6 @@ fi
 # docker build /home/ubuntu/java-maven-app -t java_app:1.1
 echo "------------------------>running containers."
 cd /home/ubuntu/java-maven-app
-docker-compose up -d --force-recreate 
+docker-compose up -d --build
 echo "------------------------>Current running containers"
 docker ps

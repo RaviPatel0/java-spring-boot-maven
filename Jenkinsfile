@@ -17,7 +17,7 @@ pipeline {
                         remote.user = 'ubuntu'
                         remote.identityFile = "/var/lib/jenkins/.ssh/id_rsa.pem"
                         remote.allowAnyHosts = true
-                        sshPut remote: remote, from: './docker-compose.yml', into: '/home/ubuntu/java-maven-app'
+                        sshPut remote: remote, from: './docker-compose.yaml', into: '/home/ubuntu/java-maven-app'
                         sshPut remote: remote, from: './pom.xml', into: '/home/ubuntu/java-maven-app'
                         sshPut remote: remote, from: './src', into: '/home/ubuntu/java-maven-app'
                         sshPut remote: remote, from: './Dockerfile', into: '/home/ubuntu/java-maven-app'

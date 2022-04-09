@@ -15,6 +15,6 @@ fi
 echo "------------------------>building image."
 docker build /home/ubuntu/java-maven-app -t java_app:1.1
 echo "------------------------>running containers."
-docker-compose up --force-recreate -d -f /home/ubuntu/java-maven-app/docker-compose.yaml
+docker-compose up -d
 echo "------------------------>Current running containers"
 docker ps

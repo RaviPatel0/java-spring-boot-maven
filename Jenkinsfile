@@ -14,7 +14,7 @@ pipeline {
                     def remote = [:]
                         remote.name = 'app_server'
                         remote.host = '54.163.150.143'
-                        remote.user = 'root'
+                        remote.user = 'ubuntu'
                         remote.identityFile = "/var/lib/jenkins/.ssh/id_rsa.pem"
                         remote.allowAnyHosts = true
                         sshPut remote: remote, from: './docker-compose.yaml', into: '/home/ubuntu/java-maven-app'

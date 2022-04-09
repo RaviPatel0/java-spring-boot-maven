@@ -1,3 +1,4 @@
+cd /home/ubuntu/java-maven-app
 running_containers=`docker ps | grep maven-project | wc -l`
 local_images=`docker images | grep java_app | wc -l`
 echo "------------------------>Number of running containers: $running_containers"
@@ -15,7 +16,7 @@ fi
 # echo "------------------------>building image."
 # docker build /home/ubuntu/java-maven-app -t java_app:1.1
 echo "------------------------>running containers."
-cd /home/ubuntu/java-maven-app
+
 docker-compose build -q
 docker-compose up -d
 echo "------------------------>Current running containers" 

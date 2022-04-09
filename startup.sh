@@ -12,8 +12,8 @@ then
     echo "------------------------>found local images, removing them"
     docker rmi -f java_app:1.1
 fi
-echo "------------------------>building image."
-docker build /home/ubuntu/java-maven-app -t java_app:1.1
+# echo "------------------------>building image."
+# docker build /home/ubuntu/java-maven-app -t java_app:1.1
 echo "------------------------>running containers."
 cd /home/ubuntu/java-maven-app
 docker-compose up -d --force-recreate 

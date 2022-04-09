@@ -1,6 +1,7 @@
 version: '3.4'
 services:
   maven-project:
+    build: .
     image: java_app:1.1
     ports:
       - "8086:8080"

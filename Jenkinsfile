@@ -13,7 +13,7 @@ pipeline {
                 script{
                     def remote = [:]
                         remote.name = 'app_server'
-                        remote.host = '54.163.150.143'
+                        remote.host = '54.152.218.244'
                         remote.user = 'ubuntu'
                         remote.identityFile = "/var/lib/jenkins/.ssh/id_rsa.pem"
                         remote.allowAnyHosts = true

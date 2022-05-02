@@ -5,7 +5,7 @@ services:
     image: java_app:1.1
     ports:
       - "8086:8080"
-  maven-projec-2:
+  maven-projec-tmp:
     build: .
     image: java_app:1.1
     ports:
